@@ -1,0 +1,33 @@
+mkdir nyobain-git ##### bikin folder namanya itu
+git init ##### inisiasi git di folder tersebut
+git status ##### ngecek kondisi git di folder tersebut
+touch hello.txt ##### bikin file baru bernama itu
+git add hello.txt ##### nambahin si hello.txt ke staging area
+git commit ##### ngesave si perubahan dengan nulis message nya di vim
+    vim
+        i ##### masuk ke mode insert
+        esc ##### keluar dari mode insert
+        : ##### awalan buat masukin kode rahasia
+        w ##### write
+        q ##### quit
+
+git log ##### ngecek ada history perubahan apa aja
+vim hello.txt ##### masuk ke kode editor yang ada di cmd/terminal
+cat hello.txt ##### ngeprint isinya si hello.txt
+
+ls ##### list isi folder
+    -a ##### liatin semua termasuk yang hidden
+    -l ##### ngeliatin dalam bentuk details
+pwd ##### ngeliatin lagi di folder mana
+
+git branch ##### liat list cabang yang ada
+git checkout f12ef1 ##### kembali ke masa itu, sesuai commit code
+git checkout master ##### masuk ke branch master ATAU checkout HEAD
+
+git branch update-hello ##### bikin cabang dengan file yang sama dengan branch sekarang (nyalin)
+git checkout update-hello ##### pindah ke cabang tersebut
+
+git merge update-hello ##### ngegabungin branch tersebut dengan branch sekarang berada
+    Fast-Forward ##### git bisa ngegabungin branch dan menyelesaikan konflik yang ada
+
+git commit -m "message" ##### ngecommit tapi pake inline-message
